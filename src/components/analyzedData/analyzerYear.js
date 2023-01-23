@@ -33,7 +33,7 @@ function mapMapData(key, jsondata, mapToYear) {
 
 
 module.exports.MapYearfunct = function MapYearfunct(jsondata, Year) {
-  console.log("jsondata", jsondata);
-  console.log("yearval", Year)
+  // console.log("jsondata", jsondata);
+  // console.log("yearval", Year)
   return mapMapData(Year, jsondata, mapToYear);
 };

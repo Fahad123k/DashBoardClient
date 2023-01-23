@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-import { MapYearfunct } from "../analyzedData/analyzerYear";
+// import  {MapYearfunct}  from "../analyzedData/analyzerYear";
 import { useSelector } from "react-redux";
 import '../pie.css'
 
@@ -39,6 +39,8 @@ function GenericLine(props) {
   });
 
   useEffect(() => {
+    const {MapYearfunct}=require('../analyzedData/analyzerYear');
+
     if (mydata.length > 0) {
       console.log("i am insidit");
       let MapYear = {};

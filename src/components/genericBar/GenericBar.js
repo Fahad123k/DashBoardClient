@@ -10,7 +10,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-import { MapYearfunct } from "../analyzedData/analyzerYear";
+// import  {MapYearfunct}  from "../analyzedData/analyzerYear";
 import { useSelector } from "react-redux";
 
 import '../pie.css'
@@ -22,23 +22,24 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend
-);
-
-function GenericBar(props) {
-  // console.log("props data",props)
-  const mydata = useSelector((state) => state.fetchData.data);
-
-  const [data1, setdata1] = useState({
-    Eyear: [],
-    intensity: [],
-    relevance: [],
-    likelihood: [],
-  });
-
-
-  useEffect(() => {
+  );
+  
+  function GenericBar(props) {
+    // console.log("props data",props)
+    const mydata = useSelector((state) => state.fetchData.data);
+    
+    const [data1, setdata1] = useState({
+      Eyear: [],
+      intensity: [],
+      relevance: [],
+      likelihood: [],
+    });
+    
+    
+    useEffect(() => {
+    const {MapYearfunct}=require('../analyzedData/analyzerYear');
     if (mydata.length > 0) {
-      console.log("i am insidit");
+      // console.log("i am insidit");
       let MapYear = {};
       console.log("props val", props.year)
       MapYear.mapToYear = MapYearfunct(mydata, props.year);
