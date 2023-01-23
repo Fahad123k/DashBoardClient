@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DashBoardClient/static/css/main.ce70bd44.css",
+    "main.js": "/DashBoardClient/static/js/main.37664485.js",
+    "index.html": "/DashBoardClient/index.html",
+    "main.ce70bd44.css.map": "/DashBoardClient/static/css/main.ce70bd44.css.map",
+    "main.37664485.js.map": "/DashBoardClient/static/js/main.37664485.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce70bd44.css",
+    "static/js/main.37664485.js"
+  ]
+}
